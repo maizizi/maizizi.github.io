@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" http-equiv="content-type" content="text/html" >
+    <title>FM.520</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/angular-route/1.3.13/angular-route.js"></script>
+    <!--<script src="lib/jquery.js"></script>-->
+    <!--<script src="lib/angular.js"></script>-->
+    <!--<script src="lib/angular2.js"></script>-->
+    <!--<script src="lib/router.js"></script>-->
+    <!--<script src="lib/angularFiles.js"></script>-->
+    <script src="lib/angular-route.min.js"></script>
+    <!--<script src="lib/angular-ui-router.min.js"></script>-->
+
+    <!--<script src="lib/bootstrap.min.js"></script>-->
+    <!--<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">-->
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" type="text/css" href="CSS/style_center.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style_image.css">
+
+    <style>
+
+    </style>
+    <script type="text/javascript">
+        angular.module('ngRouteExample', ['ngRoute'])
+
+        .controller('myCtrl', function($scope) {
+            var audio = document.getElementById('audio');
+            $scope.clickValue = {
+                    isShow1 : false,
+                    isShow2 : false,
+                    isShow3 : false,
+                    isShow4 : false,
+                    isShow5 : false,
+                    isShow6 : false
+            };
+            $scope.clear =function () {
+                $scope.clickValue.isShow1 =false;
+                $scope.clickValue.isShow2 =false;
+                $scope.clickValue.isShow3 =false;
+                $scope.clickValue.isShow4 =false;
+                $scope.clickValue.isShow5 =false;
+                $scope.clickValue.isShow6 =false;
+            }
+            //播放歌曲
+            $scope.play = function() {
+                audio.play();
+            };
+            //暂停
+            $scope.pause = function() {
+                audio.pause();
+            };
+            //l1
+            $scope.clickL1=function () {
+                $scope.clear();
+                $scope.clickValue.isShow1 =true;
+            };
+            $scope.clickL2=function ()  {
+                $scope.clear();
+                $scope.clickValue.isShow2 =true;
+            };
+            $scope.clickL3=function ()  {
+                $scope.clear();
+                $scope.clickValue.isShow3 =true;
+            };
+            $scope.clickL4=function ()  {
+                $scope.clear();
+                $scope.clickValue.isShow4 =true;
+            };
+            $scope.clickL5=function ()  {
+                $scope.clear();
+                $scope.clickValue.isShow5 =true;
+            };
+            $scope.clickL6=function ()  {
+                $scope.clear();
+                $scope.clickValue.isShow6 =true;
+            };
+        });
+
+
+
+
+
+
+    </script>
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container" >
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#section1" style="color: rgba(255, 255, 255, 0.8)">FM.520恩爱频道</a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav  navbar-right" >
+                    <li><a href="#section1">♥</a></li>
+                    <li><a href="#section2">♥</a></li>
+                    <li><a href="#section3">♥</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section>
+   <!-- <div class="container">
+        <p style="font-size: 100px">祝陈陈生日快乐！</p>
+    </div>-->
+</section>
+<section id="section1">
+    <div id="ad-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#ad-carousel" data-slide-to="1"></li>
+            <li data-target="#ad-carousel" data-slide-to="2"></li>
+            <li data-target="#ad-carousel" data-slide-to="3"></li>
+
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="image/A1.jpg" alt="1 slide" class=”img-responsive”">
+                <div class="container-fluid">
+                    <!--<div class="carousel-caption" style="margin-bottom: 50px">
+                        <h1>青年园湖心亭</h1>
+                        <p>一起赏过的荷花展、一起浪过的约会圣地</p>
+                    </div>-->
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/A2.jpg" alt="2 slide" class=”img-responsive”>
+
+                <div class="container">
+                    <!--<div class="carousel-caption"  style="margin-bottom: 50px">
+                        <h1>嘉宾亭</h1>
+                        <p>春秋多佳日，山水有清音</p>
+
+                        &lt;!&ndash; <p><a class="btn btn-lg btn-primary" href="http://www.firefox.com.cn/download/" target="_blank"
+                               role="button">点我下载</a></p>&ndash;&gt;
+                    </div>-->
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/A3.jpg" alt="3 slide" class=”img-responsive”>
+
+                <div class="container">
+                    <!--<div class="carousel-caption"  style="margin-bottom: 50px">
+                        <h1>公园公园</h1>
+                        <p>一起散步逛公园</p>
+
+                        &lt;!&ndash;<p><a class="btn btn-lg btn-primary" href="http://www.apple.com/cn/safari/" target="_blank"
+                              role="button">点我下载</a></p>&ndash;&gt;
+                    </div>-->
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/A4.jpg" alt="2 slide" class=”img-responsive”>
+
+                <div class="container">
+                    <!--<div class="carousel-caption"  style="margin-bottom: 50px">
+                        <h1>辣眼睛辣眼睛</h1>
+
+                        <p>哈哈哈哈哈哈哈哈</p>
+
+                        &lt;!&ndash; <p><a class="btn btn-lg btn-primary" href="http://www.firefox.com.cn/download/" target="_blank"
+                               role="button">点我下载</a></p>&ndash;&gt;
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+                class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+                class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+</section>
+
+<section ng-app="ngRouteExample" ng-controller="myCtrl" id="section2" style="margin-top: 100px;/*background-color: #00A8FF;background-image: url(image/section2_1.jpg);background-blend-mode:multiply */" class="ng-scope">
+    <div class="container">
+
+        <nav class="cl-effect-2" style="text-align: center">
+        <div class="anniu">
+            <div class="btn-toolbar">
+            <a ng-click="clickL1()"><span data-hover="缘来是你" id="L1">缘来是你</span></a>
+            <a ng-click="clickL2()"><span data-hover="萌宠萌宠" id="L2">萌宠萌宠</span></a>
+            <a ng-click="clickL3()"><span data-hover="旅游啊游" id="L3">旅游啊游</span></a>
+            <a ng-click="clickL4()"><span data-hover="毕业季·♥" id="L4">毕业季·♥</span></a>
+            <a ng-click="clickL5()"><span data-hover="啦啦啦啦" id="L5">啦啦啦啦</span></a>
+            <a ng-click="clickL6()"><span data-hover="一路有你" id="L6">一路有你</span></a>
+        </div>
+        </div>
+        </nav>
+        <div style="text-align: center;margin-top: 10px">
+            <button ng-click="play()" style="background-color: transparent;border-color: transparent;color: #4459b4"  class="glyphicon glyphicon-play"></button>
+            <button ng-click="pause()" style="background-color: transparent;border-color: transparent;color: #4459b4" class="glyphicon glyphicon-pause"></button>
+
+            <audio controls  id="audio" ng-show="false" loop="loop">
+                <source src="music/南拳妈妈%20-%20橘子汽水.mp3" type="audio/mpeg">
+                您的浏览器不支持 audio 元素。
+            </audio>
+        </div>
+        <div class="container" id="L1div" ng-show="clickValue.isShow1">
+            <div class="ttext textt">
+                <p>“你是不是有点喜欢我啊？”</p>
+                <p>“不是有点，是很。”</p>
+            </div>
+            <div class="row">
+                <div class="col-md-1" >
+                    <p class="ttitle" style="text-align: right">我愿是急流</p>
+                </div>
+                <div class="ttext">
+                    <div class="col-md-2" style="text-align: left">
+                        <p>我愿意是急流，<br>
+                            山里的小河，<br>
+                            在崎岖的路上、<br>
+                            岩石上经过……<br>
+                            只要我的爱人<br>
+                            是一条小鱼，<br>
+                            在我的浪花中<br>
+                            快乐地游来游去。
+                        </p>
+                    </div>
+                    <div class="col-md-2" style="text-align: left">
+                        <p> 我愿意是荒林，<br>
+                            在河流的两岸，<br>
+                            对一阵阵的狂风，<br>
+                            勇敢地作战……<br>
+                            只要我的爱人<br>
+                            是一只小鸟，<br>
+                            在我的稠密的<br>
+                            树枝间做窠鸣叫。
+                        </p>
+                    </div>
+                    <div class="col-md-2" style="text-align: left">
+                        <p> 我愿意是废墟，<br>
+                            在峻峭的山岩上，<br>
+                            这静默的毁灭<br>
+                            并不使我懊丧……<br>
+                            只要我的爱人<br>
+                            是青青的常春藤，<br>
+                            沿着我荒凉的额，<br>
+                            亲密地攀援上升。
+                        </p>
+                    </div>
+                    <div class="col-md-2" style="text-align: left">
+                        <p> 我愿意是草屋，<br>
+                            在深深的山谷底，<br>
+                            草屋的顶上<br>
+                            饱受风雨打击……<br>
+                            只要我的爱人<br>
+                            是可爱的火焰，<br>
+                            在我的炉子里，<br>
+                            愉快地缓缓闪现。
+                        </p>
+                    </div>
+                    <div class="col-md-2" style="text-align: left">
+                        <p> 我愿意是云朵，<br>
+                            是灰色的破旗，<br>
+                            在广漠的空中，<br>
+                            懒懒地飘来荡去，<br>
+                            只要我的爱人<br>
+                            是珊瑚似的夕阳，<br>
+                            傍着我苍白的脸，<br>
+                            显出鲜艳的辉煌。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid" ng-show="clickValue.isShow1">
+            <figure class="effect-milo">
+                <img src="image/L1rose.JPG" alt="imgL1rose"/>
+                <figcaption>
+                    <h2>花语 <span>长相守</span></h2>
+                    <p>从西小门到紫菘广场的惊喜之路</p>
+                    <p>What a big surprise</p>
+                </figcaption>
+            </figure>
+            <figure class="effect-milo" style="float: right">
+                <img src="image/L1heart.png" alt="imgL1heart"/>
+                <figcaption>
+                    <h2>蜡烛 <span>♥·♥</span></h2>
+                    <p>口琴版情非得已，青涩中满满真心</p>
+                    <p>You are mine</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="container" id="L2div" ng-show="clickValue.isShow2">
+            <div class="ttext textt">
+                <p>“现在一起养狗，以后一起遛狗，日久生情，狗又生狗。”</p>
+                <p>——《我的少女时代》</p>
+            </div>
+
+            <div class="ttext textt">
+                <p>“仓鼠喜欢被摸吗？摸哪里好？”</p>
+                <p>仓鼠只喜欢吃，不喜欢被摸。</p>
+                <p>尤其是不喜欢吃东西的时候被摸。</p>
+                <p>设想你每天在家里好端端地吃着饭，从窗户里伸进来一只挖掘机的挖斗把你连人带桌挖了出去。</p>
+                <p>你自诩处变不惊而且宽容大度，所以没有理会继续吃，这时伸过来另一只挖掘机的大挖斗不停地怼你。</p>
+                <p>不停地怼你。</p>
+                <p>不停地怼你。</p>
+                <p>不停地怼你。</p>
+                <p>请自行感受一下仓鼠当时的心理活动。</p>
+                <p>——《知乎日报》瞎扯·如何正确地吐槽</p>
+            </div>
+            <div class="grid" style="vertical-align: middle">
+                <figure class="effect-oscar">
+                    <img src="image/L2mice.jpg" alt="imgL2mice"/>
+                    <figcaption>
+                        <h2>布丁和原配<span></span></h2>
+                        <p>2014年春,布丁陪了我们整整两年</p>
+                        <p>刚开始恨不得天天摸她...</p>
+                    </figcaption>
+                </figure>
+                <figure class="effect-oscar" style="float: right">
+                    <img src="image/L2mouse.jpg" alt="imgL2mouse"/>
+                    <figcaption>
+                        <h2>布丁的老年生活<span>♥·♥</span></h2>
+                        <p>生了三个娃之后,颐养天年的布丁</p>
+                        <p>还是天天吃的日子</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="container"  ng-show="clickValue.isShow3">
+            <div class="ttext textt">
+                <p>最开心的事莫过于和你一起浪浪浪~~~</p>
+            </div>
+
+            <p class="ttext textt place" data-toggle="collapse"
+               data-target="#shunde">—— <span class="glyphicon glyphicon-map-marker"></span>顺德 ——</p>
+
+            <div id="shunde" class="collapse">
+                <p class="ttext textt des">刚在一起的第一个七夕，是什么样的勇气直接闯进家门，我到现在都弄不明白。</p>
+                <p class="ttext textt des">但一起走过的清辉园、顺峰山公园都还历历在目，还一起装学生混进高中，游荡在学校的生物园。</p>
+                <p class="ttext textt des">而凄风苦雨的顺德站，一笑泯恩仇吧，刷刷刷~</p>
+                <div class="grid">
+                    <figure class="effect-apollo">
+                        <img src="image/L3shunde1.jpg" alt="imgL1rose"/>
+                        <figcaption>
+                            <h2>西山庙<span></span></h2>
+                            <p>古朴的庙里有块写满“福”字的石头，这样看我俩好像一样高哈哈</p>
+                            <p></p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="effect-apollo" style="float: right">
+                        <img src="image/L3shunde2.JPG" alt="imgL1heart"/>
+                        <figcaption>
+                            <h2>顺德一中高中部<span></span></h2>
+                            <p>偷溜进母校的激动，介绍时满满的自豪，仿佛高中生活也能一同度过</p>
+                            <p></p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <p data-toggle="collapse" class="ttext textt place"
+                   data-target="#guangzhou">—— <span class="glyphicon glyphicon-map-marker"
+                                                     style="margin-top: 25px;margin-bottom: 10px"></span>广州 ——</p>
+                <div id="guangzhou" class="collapse">
+                    <p class="ttext textt des">当时我还是个不会浪的人</p>
+                    <p class="ttext textt des">可是转角的石室圣心大教堂,有惊艳到吗</p>
+                    <p class="ttext textt des">还想吃上下九路的芒果冰和虾仁云吞面吗</p>
+                    <div class="grid">
+                        <figure class="effect-ming">
+                            <img src="image/L3guangzhou1.jpg" alt="imgL1rose"/>
+                            <figcaption>
+                                <h2>石室圣心大教堂<span></span></h2>
+                                <p>一起翻开的圣经</p>
+                                <p>闹市中的净地</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-ming">
+                            <img src="image/L3guangzhou2.JPG" alt="imgL1rose"/>
+                            <figcaption>
+                                <h2>陈家祠<span></span></h2>
+                                <p>岭南祠堂的典范</p>
+                                <p>放松的心情</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <p data-toggle="collapse" class="ttext textt place"
+                       data-target="#chengdu">—— <span class="glyphicon glyphicon-map-marker"
+                                                       style="margin-top: 25px;margin-bottom: 10px"></span>成都
+                        ——</p>
+                    <div id="chengdu" class="collapse">
+                        <p class="ttext textt des">成都之行，第一次一起旅行，一直是印象里最甜美的旅途。</p>
+                        <p class="ttext textt des">凌晨的车站、文艺的宽窄巷、古朴的武侯祠、秀美的都江堰、缥缈的峨眉金顶、鲜甜的无花果和红心猕猴桃。。。</p>
+                        <p class="ttext textt des">还有心心念念没看成的猴子、只瞄了一眼后门的青城山、没有吃成的火锅</p>
+                        <div class="grid">
+                            <figure class="effect-selena">
+                                <img src="image/L3chengdu1.jpg" alt="imgL1rose"/>
+                                <figcaption>
+                                    <h2>师从峨嵋派<span></span></h2>
+                                    <p>半夜登山的惊险、山腰的土豪香肠</p>
+                                    <p>猴子肯定等着我们以后去~</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="effect-selena" style="float: right">
+                                <img src="image/L3chengdu2.jpg" alt="imgL1heart"/>
+                                <figcaption>
+                                    <h2>熊猫宝宝<span></span></h2>
+                                    <p>第一次近距离地看到这么多大熊猫，萌化了！</p>
+                                    <p>还看到饲养员帮宝宝们拉粑粑..</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <p data-toggle="collapse" class="ttext textt place"
+                           data-target="#yichang">—— <span class="glyphicon glyphicon-map-marker"
+                                                           style="margin-top: 25px;margin-bottom: 10px"></span>宜昌 ——</p>
+                        <div id="yichang" class="collapse">
+                            <p class="ttext textt des">两次宜昌之行有着不一样的心情</p>
+                            <p class="ttext textt des">有时想想能念同一个专业真好，我说的冷笑话你都秒懂</p>
+                            <p class="ttext textt des">所以是要一起为水电事业做贡献吗哈哈</p>
+                            <div class="grid">
+                                <figure class="effect-jazz">
+                                    <img src="image/L3yichang1.jpg" alt="imgL1rose"/>
+                                    <figcaption>
+                                        <h2>三峡大坝<span></span></h2>
+                                        <p>当时还想着一起去三峡班</p>
+                                        <p>要是这样，说不定现在已经生娃了哈哈</p>
+                                    </figcaption>
+                                </figure>
+                                <figure class="effect-jazz">
+                                    <img src="image/L3yichang2.jpg" alt="imgL1rose"/>
+                                    <figcaption>
+                                        <h2>三峡大坝<span></span></h2>
+                                        <p>这个表情我好像有点不情愿啊</p>
+                                        <p>是在耍流氓吗</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <p data-toggle="collapse" class="ttext textt place"
+                               data-target="#nanjing">—— <span class="glyphicon glyphicon-map-marker"
+                                                               style="margin-top: 25px;margin-bottom: 10px"></span>南京 ——</p>
+                            <div id="nanjing" class="collapse">
+                                <p class="ttext textt des">大南京！！</p>
+                                <p class="ttext textt des">夕阳下的玄武湖真的好美，灵秀的紫金山更是让人心旷神怡，庆幸我们都是爱山的人</p>
+                                <p class="ttext textt des">从此，就一直对南京怀有莫名的好感</p>
+                                <div class="grid">
+                                    <figure class="effect-duke">
+                                        <img src="image/L3nanjing1.jpg" alt="imgL1rose"/>
+                                        <figcaption>
+                                            <h2>紫金山<span></span></h2>
+                                            <p>据说这个位置是毛主席拍照的风水宝地，很大气有木有！</p>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="effect-duke">
+                                        <img src="image/L3nanjing2.jpg" alt="imgL1rose"/>
+                                        <figcaption>
+                                            <h2>南京大排档<span></span></h2>
+                                            <p>一开始以为只是个小餐馆，天王烤鸭包真的好好吃</p>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="effect-duke">
+                                        <img src="image/L3nanjing3.jpg" alt="imgL1rose"/>
+                                        <figcaption>
+                                            <h2>玄武湖<span></span></h2>
+                                            <p>记得那天有点头疼，可是在湖上一浪神清气爽，包治百病的小艇</p>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="effect-duke">
+                                        <img src="image/L3nanjing4.jpg" alt="imgL1rose"/>
+                                        <figcaption>
+                                            <h2>夫子庙<span></span></h2>
+                                            <p>街上很繁华，那会好像在维修，又是一个要再走一遍的地方</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <p data-toggle="collapse" class="ttext textt place"
+                                   data-target="#suzhou">—— <span class="glyphicon glyphicon-map-marker"
+                                                                  style="margin-top: 25px;margin-bottom: 10px"></span>苏州 ——</p>
+                                <div id="suzhou" class="collapse">
+                                    <p class="ttext textt des">虽然我觉得这在北方，但你说是江南水乡就是咯</p>
+                                    <p class="ttext textt des">别致的拙政园、烟雨蒙蒙的平江路、风景如画的周庄。。。</p>
+                                    <p class="ttext textt des">松子鱼、万三猪蹄，这里吃的太符合我的口味啦</p>
+                                    <div class="grid">
+                                        <figure class="effect-layla">
+                                            <img src="image/L3suzhou1.jpg" alt="imgL1rose"/>
+                                            <figcaption>
+                                                <h2>万三猪蹄<span></span></h2>
+                                                <p>味道不要太感人</p>
+                                                <p>第一次听你夸猪肉好吃</p>
+                                            </figcaption>
+                                        </figure>
+                                        <figure class="effect-layla">
+                                            <img src="image/L3suzhou2.jpg" alt="imgL2rose"/>
+                                            <figcaption>
+                                                <h2>船行周庄<span></span></h2>
+                                                <p>耳畔吴音细诉，歌声缭绕</p>
+                                                <p>记得你说喜欢乌蓬煮酒的小生活</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <p data-toggle="collapse" class="ttext textt place"
+                                       data-target="#huaian">—— <span class="glyphicon glyphicon-map-marker"
+                                                                      style="margin-top: 25px;margin-bottom: 10px"></span>淮安 ——</p>
+                                    <div id="huaian" class="collapse">
+                                        <p class="ttext textt des">既然拐到江苏了，就干脆拐回家吧¬_¬</p>
+                                        <p class="ttext textt des">四个人一起看的电视、逛的校园、打的掼蛋、吃的西瓜。。。</p>
+                                        <p class="ttext textt des">是落落大方的好评吗？其实我很害羞的哈哈哈</p>
+                                        <div class="grid">
+                                            <figure class="effect-marley">
+                                                <img src="image/L3huaian1.jpg" alt="imgL1rose"/>
+                                                <figcaption>
+                                                    <h2>淮安府衙<span></span></h2>
+                                                    <p>第一次被熊孩子喊阿姨让一下X_X</p>
+                                                </figcaption>
+                                            </figure>
+                                            <figure class="effect-marley">
+                                                <img src="image/L3huaian2.jpg" alt="imgL1rose"/>
+                                                <figcaption>
+                                                    <h2>周总理纪念堂<span></span></h2>
+                                                    <p>吃了很贵很贵的蟹黄灌汤包</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <p data-toggle="collapse" class="ttext textt place"
+                                           data-target="#beijing">—— <span class="glyphicon glyphicon-map-marker"
+                                                                           style="margin-top: 25px;margin-bottom: 10px"></span>北京 ——
+                                        </p>
+                                        <div id="beijing" class="collapse">
+
+                                            <p class="ttext textt des">帝都，我们来啦</p>
+                                            <p class="ttext textt des">去了好多好多好玩的地方，天安门、故宫、长城、后海、颐和园、清华园。。。</p>
+                                            <p class="ttext textt des">犹记得为了站第一排看升旗，在街上浪了大半夜睡在了鱼龙混杂的地下麦当劳</p>
+                                            <div class="grid">
+                                                <figure class="effect-chico">
+                                                    <img src="image/L3beijing1.jpg" alt="imgL1rose"/>
+                                                    <figcaption>
+                                                        <h2>升旗后的天安门<span></span></h2>
+                                                        <p>眼袋眼圈啊哈哈</p>
+                                                        <p>还是开心得像两个傻子</p>
+                                                    </figcaption>
+                                                </figure>
+
+                                                <figure class="effect-chico" style="float: right">
+                                                    <img src="image/L3beijing2.jpg" alt="imgL1heart"/>
+                                                    <figcaption>
+                                                        <h2>万里长城<span></span></h2>
+                                                        <p>第一次踏上长城</p>
+                                                        <p>竟然立马就达成共识：走几步就好了</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <p data-toggle="collapse" class="ttext textt place"
+                                               data-target="#changsha">—— <span class="glyphicon glyphicon-map-marker"
+                                                                                style="margin-top: 25px;margin-bottom: 10px"></span>长沙
+                                                ——</p>
+
+                                            <div id="changsha" class="collapse">
+                                                <p class="ttext textt des">是一次假期还是一次逃课,就浪到了长沙</p>
+                                                <p class="ttext textt des">只有一条主干道也是大大方便了我这个路痴</p>
+                                                <p class="ttext textt des">喜欢岳麓山和橘子洲,下次去看烟花和快乐大本营吧~</p>
+                                                <div class="grid">
+                                                    <figure class="effect-ming">
+                                                        <img src="image/L3changsha1.jpg" alt="imgL1rose"/>
+                                                        <figcaption>
+                                                            <h2>是哪个大学呢<span></span></h2>
+                                                            <p>估计是湖南大学吧，就喜欢挨着山的大学哈哈</p>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <figure class="effect-ming">
+                                                        <img src="image/L3changsha2.jpg" alt="imgL1rose"/>
+                                                        <figcaption>
+                                                            <h2>橘子洲<span></span></h2>
+                                                            <p>其实这会已经玩累了，可是还在到处逛不想停</p>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                                <p data-toggle="collapse" class="ttext textt place"
+                                                   data-target="#wuhan">—— <span class="glyphicon glyphicon-map-marker"
+                                                                                 style="margin-top: 25px;margin-bottom: 10px"></span>武汉
+                                                    ——</p>
+                                                <div id="wuhan" class="collapse"><p class="ttext textt des">如果高考多一分去了北师大,或许遇不到你</p>
+                                                    <p class="ttext textt des">在这里,真的留下了太多太多的回忆</p>
+                                                    <p class="ttext textt des">一起浪过的日子，我可能会渐渐忘记，但，有你一路提醒</p>
+                                                    <div class="grid">
+                                                        <figure class="effect-sadie">
+                                                            <img src="image/L3wuhan1.jpg" alt="imgL1rose"/>
+                                                            <figcaption>
+                                                                <h2>东湖<span></span></h2>
+                                                                <p>这张显得我俩好傻，要是像玄武湖那样能自己开就好了</p>
+                                                            </figcaption>
+                                                        </figure>
+                                                        <figure class="effect-sadie">
+                                                            <img src="image/L3wuhan2.jpg" alt="imgL1rose"/>
+                                                            <figcaption>
+                                                                <h2>武大<span></span></h2>
+                                                                <p>第一次一起看樱花，为了免票起了个大早，和外婆一起三人行哈哈</p>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    <p data-toggle="collapse" class="ttext textt place"
+                                                       data-target="#shunde">—— <span class="glyphicon glyphicon-map-marker"
+                                                                                      style="margin-top: 25px;margin-bottom: 10px"></span>我们仍在路上 ——
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" ng-show="clickValue.isShow4">
+            <div class="ttext textt">
+                <p>毕业季·不分离</p>
+                <p>毕业季任性地让你留了胡子</p>
+                <p>哈哈光看合照就知道你占了好大的便宜</p>
+            </div>
+
+            <div class="ttext textt">
+                <p>估计是几年里最闲的一段好时光</p>
+                <p>没有保外、考研或者找工作的压力</p>
+                <p>泡在Summer Books的日子，你煮着咖啡请我吃店里的甜点，我打打游戏或者做双学位的毕设</p>
+                <p>人懒着懒着也很惬意</p>
+            </div>
+            <div class="grid" style="vertical-align: middle">
+                <figure class="effect-oscar">
+                    <img src="image/L41.jpg" alt="imgL2mice"/>
+                    <figcaption>
+                        <h2>青年园<span></span></h2>
+                        <p>感觉自己萌萌哒</p>
+                    </figcaption>
+                </figure>
+                <figure class="effect-ming" style="float: right">
+                    <img src="image/L42.jpg" alt="imgL2mouse"/>
+                    <figcaption>
+                        <h2>西十二<span></span></h2>
+                        <p>两个人傻不啦叽的</p>
+                    </figcaption>
+                </figure>
+                <figure class="effect-jazz">
+                    <img src="image/L43.jpg" alt="imgL2mice"/>
+                    <figcaption>
+                        <h2>妻妾成群<span></span></h2>
+                        <p>我是正宫娘娘</p>
+                    </figcaption>
+                </figure>
+                <figure class="effect-oscar" style="float: right">
+                    <img src="image/L44.jpg" alt="imgL2mouse"/>
+                    <figcaption>
+                        <h2>有点帅呀<span></span></h2>
+                        <p>这张照片好装哈哈</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="container" style="text-align: center" ng-show="clickValue.isShow5"><!--
+<div class="ttext textt" style="text-align: center">
+    <p>悄悄话</p>
+</div>-->
+            <nav class="cl-effect-2" style="text-align: center">
+                <div class="anniu">
+                    <div class="btn-toolbar">
+                        <a data-toggle="modal" data-target="#myModal1"><span data-hover="点我点我" >点我点我</span></a>
+                    </div>
+                </div>
+            </nav>
+
+            <!--<button class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+                开始演示模态框
+            </button>-->
+
+            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" style="margin-top: 10%">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!--<div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">×
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">
+                                模态框（Modal）标题
+                            </h4>
+                        </div>-->
+                        <div class="modal-body">
+                            这是一个陷阱。。。
+                        </div>
+                        <div class="modal-footer">
+                            <!--<button type="button" class="btn btn-default"
+                                    data-dismiss="modal">关闭
+                            </button>-->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2" data-dismiss="modal" >
+                                我爱麦子
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"  style="margin-top: 10%">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            是不是想到那种点很久很久点不完的坑，来吧，不许关
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"  data-toggle="modal"  data-target="#myModal3" data-dismiss="modal">
+                                很爱麦子
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"  style="margin-top: 10%">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            我要对麦子好，特别好
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4"  data-dismiss="modal">
+                                非常爱麦子
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"  style="margin-top: 10%">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            麦子说什么就是什么，麦子让我干什么就干什么
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal5"  data-dismiss="modal">
+                                超级爱麦子
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <div class="modal fade" id="myModal5" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"  style="margin-top: 10%">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            我绝不主动跟麦子吵架，麦子生气了一定好好哄
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal6"  data-dismiss="modal">
+                                只爱麦子
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <div class="modal fade" id="myModal6" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"  style="margin-top: 10%">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            我平时要逗麦子开心
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal7"  data-dismiss="modal">
+                                只喜欢麦子
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <div class="modal fade" id="myModal7" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"  style="margin-top: 10%">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            我要带麦子去好多好玩的地方
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal8"  data-dismiss="modal">
+                                对麦子好
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <div class="modal fade" id="myModal8" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"  style="margin-top: 10%">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            我绝不把忙当借口，不因为忙不理麦子
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal9"  data-dismiss="modal">
+                                很疼麦子
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <div class="modal fade" id="myModal9" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"  style="margin-top: 10%">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            我不对麦子隐瞒事情，不对麦子撒谎
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal10"  data-dismiss="modal">
+                                非常疼麦子
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <div class="modal fade" id="myModal10" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"  style="margin-top: 10%">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            我对麦子一心一意
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal11"  data-dismiss="modal">
+                                我也对陈陈一心一意
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <div class="modal fade" id="myModal11" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"  style="margin-top: 10%">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            哈哈哈麦子编不下去啦
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal13"  data-dismiss="modal">
+                                next
+                            </button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal12"  data-dismiss="modal">
+                                再来一遍
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <div class="modal fade" id="myModal12" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"  style="margin-top: 10%">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            真是个有觉悟的孩子
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal1"  data-dismiss="modal">
+                                很爱麦子
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+            <div class="modal fade" id="myModal13" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"  style="margin-top: 10%">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+                            哈哈哈
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default"
+                                    data-dismiss="modal">关闭
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" ng-show="clickValue.isShow6">
+            <div class="ttext textt">
+                <p>一起读研的日子</p>
+                <p>平淡琐碎的生活也很窝心</p>
+                <p>有时闹脾气，更多时候黏在一起，也不腻</p>
+            </div>
+
+            <div class="ttext textt">
+                <p>我说剪个短发，你说烫个卷发</p>
+                <p>你烫了头发更像泰迪</p>
+                <p>希望今后还能手挽手一直走，看更多的风景</p>
+            </div>
+            <div class="grid" style="vertical-align: middle">
+                <figure class="effect-jazz">
+                    <img src="image/L61.jpg" alt="imgL2mice"/>
+                    <figcaption>
+                        <h2>瑜珈山顶<span></span></h2>
+                        <p>下雪天好鸡冻好鸡冻</p>
+                        <p>疯疯癫癫地玩了一路</p>
+                    </figcaption>
+                </figure>
+                <figure class="effect-jazz" style="float: right">
+                    <img src="image/L62.jpg" alt="imgL2mouse"/>
+                    <figcaption>
+                        <h2>摩天轮<span></span></h2>
+                        <p>天荒地老流连在摩天轮</p>
+                        <p>在高处凝望世界流动</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</section>
+
+
+
+<section id="section3" style="margin-top: 50px">
+    <!-- 简介 -->
+    <div class="container h3pp">
+        <hr class="divider">
+        <div class="row" id="summary-container" style="text-align: center">
+            <div class="col-md-3">
+                <img class="img-circle" src="image/S1.jpg" alt="chrome">
+                <h3>初识</h3>
+                <p>2011</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-circle" src="image/S2.jpg" alt="firefox">
+                <h3>相知</h3>
+                <p>2013</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-circle" src="image/S3.jpg" alt="safari">
+                <h3>携手</h3>
+                <p>2015</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-circle" src="image/S4.jpg" alt="safari">
+                <h3>相伴</h3>
+                <p>future</p>
+            </div>
+        </div>
+        <hr class="divider">
+    </div>
+    <!-- 特性 -->
+</section>
+<section id="section4" >
+    <div class="container">
+
+
+        <hr class="divider">
+    </div>
+</section>
+<footer>
+    <div class="container" style="text-align: center;font-size: 15px;">
+        <p><a href=#section1>©2016 陈陈&麦麦 All rights reserved.</a>┊<a href=#>Coder:麦子&张诚</a>┊<a href=#>Designer:麦子&袁柳&张诚</a></p>
+        <p><a href=#section1>程序鼓励：清江项目全体成员♥</a></p>
+    </div>
+
+</footer>
+</body>
+</html>

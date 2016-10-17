@@ -1,0 +1,217 @@
+
+.navbar{
+   /* background-color: #6aafff;*/
+    background-color: #5d7aff;
+    opacity: 0.9;
+    border-color: transparent;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-family: cursive;
+    color: rgba(255, 255, 255, 0.8)
+}
+.navbar-brand:hover{
+    color: rgba(255, 255, 255, 0.4);
+}
+.nav.navbar-nav.navbar-right a{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.nav.navbar-nav.navbar-right a:hover{
+    color: rgba(255, 255, 255, 0.4);
+}
+.carousel {
+    margin-top: 0;
+    height: 100%;
+}
+
+.carousel .item {
+    height: 100%;
+    background-color: whitesmoke;
+
+}
+
+.carousel .item img {
+    position:static;
++position:relative;
+    top:-50%;left:-50%;
+    /*width:100%;*/
+    /*-webkit-transform: translateY(-250px);*/
+    vertical-align:middle;
+   /* margin: 0px;
+    padding: 0px;
+    height: 200%;
+    width: 100%;
+    vertical-align: middle;
+    bottom: -50%;
+    position:static;
++position:relative;*/
+    /*background-size: 100%;*/
+}
+
+#summary-container .col-md-4 {
+    margin-bottom: 20px;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+
+}
+.img-rounded{
+    height: 400px;
+    width: 500px;
+}
+.img-circle {
+    height: 150px;
+    width: 150px;
+}
+.ttitle{
+    width: 32px;
+    font-size: 32px;
+    word-wrap: break-word;
+    letter-spacing: 20px;
+    text-align: center;
+}
+.ttext{
+    font-size: 20px;
+}
+.ttext.textt{
+    font-size: 20px;text-align: center;margin-bottom: 100px;margin-top: 20px
+}
+.ttext.textt.place{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    color:rgba(0, 102, 255, 0.6);font-size: 35px;
+}
+.ttext.textt.des{
+    margin-bottom: 5px;
+}
+.ttext.textt.place:hover{
+    color:rgba(0, 102, 255, 0.4);
+}
+/* Effect 2: 3D rolling links, idea from http://hakim.se/thoughts/rolling-links */
+.cl-effect-2 a {
+    line-height: 44px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.cl-effect-2 a span {
+    position: relative;
+    display: inline-block;
+    padding: 0 14px;
+    background: #5d7aff;
+    -webkit-transition: -webkit-transform 0.3s;
+    /* -moz-transition: -moz-transform 0.3s;
+     transition: transform 0.3s;*/
+    -webkit-transform-origin: 50% 0;
+    /*-moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;*/
+    -webkit-transform-style: preserve-3d;
+    /*-moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;*/
+}
+
+.cl-effect-2 a span::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #4459b4;/*
+    background: #536ede;*/
+   /* background: rgba(0, 102, 255, 0.7);*/
+    content: attr(data-hover);
+    -webkit-transition: background 0.3s;
+    /*-moz-transition: background 0.3s;
+    transition: background 0.3s;*/
+    -webkit-transform: rotateX(-90deg);
+    /*-moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);*/
+    -webkit-transform-origin: 50% 0;
+    /* -moz-transform-origin: 50% 0;
+     transform-origin: 50% 0;*/
+}
+
+.cl-effect-2 a:hover span,
+.cl-effect-2 a:focus span {
+    -webkit-transform: rotateX(90deg) translateY(-22px);
+    -moz-transform: rotateX(90deg) translateY(-22px);
+    transform: rotateX(90deg) translateY(-22px);
+}
+
+.cl-effect-2 a:hover span::before,
+.cl-effect-2 a:focus span::before {
+    /*background: #8175ff;*/
+    background: rgba(93, 122, 255, 0.72);
+   /* background: rgba(65, 120, 255, 0.65);*/
+}
+
+
+.anniu a{
+    font-family: 华文细黑;
+    font-size: 20px;
+    color: #ffffff;
+    padding-right: 5px;
+}
+.anniu span{
+    width: 150px;
+}
+
+/*.spinner {
+           margin: 100px auto;
+           width: 90px;
+           height: 90px;
+           position: relative;
+           text-align: center;
+
+           -webkit-animation: rotate 2.0s infinite linear;
+           animation: rotate 2.0s infinite linear;
+       }
+
+       .dot1, .dot2 {
+           width: 60%;
+           height: 60%;
+           display: inline-block;
+           position: absolute;
+           top: 0;
+           background-color: #67CF22;
+           border-radius: 100%;
+
+           -webkit-animation: bounce 2.0s infinite ease-in-out;
+           animation: bounce 2.0s infinite ease-in-out;
+       }
+
+       .dot2 {
+           top: auto;
+           bottom: 0px;
+           -webkit-animation-delay: -1.0s;
+           animation-delay: -1.0s;
+       }
+
+       @-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg) }}
+       @keyframes rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+       @-webkit-keyframes bounce {
+           0%, 100% { -webkit-transform: scale(0.0) }
+           50% { -webkit-transform: scale(1.0) }
+       }
+
+       @keyframes bounce {
+           0%, 100% {
+               transform: scale(0.0);
+               -webkit-transform: scale(0.0);
+           } 50% {
+                 transform: scale(1.0);
+                 -webkit-transform: scale(1.0);
+             }
+       }*/
+
+.container.h3pp h3{
+    font-family: "Adobe 黑体 Std R";
+}
+.container.h3pp p{
+    font-family: "Adobe 黑体 Std R";
+}

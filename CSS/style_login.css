@@ -1,0 +1,264 @@
+.backSIZE {
+    color: #fff;
+    background-position: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 850px;
+}
+.backIMG {
+    background-image: url(../image/bg3.jpeg);
+    /* background-repeat:no-repeat ;
+     background-size:100% 100%;*/
+    background-attachment: fixed;
+
+
+}
+
+.backOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin-bottom: 0;
+}
+.login-register-page__content input{
+    color: #0091ea;
+    font-size: 20px;
+    text-align: left;
+}
+.login-register-page__content {
+    max-width: 400px;
+    width: 100%;
+    float: right;
+    padding: 80px 0 0 0;
+    margin-bottom: 0;
+}
+.login-register-page__content .content-title span {
+    font-size: 24px;
+    color: #202021;
+    line-height: 1.1em;
+}
+.login-register-page__content .content-title h2 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.1em;
+}
+.navbar-header-style {
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 9;
+
+    -webkit-animation: bounce 6.0s infinite ease-in-out;
+    animation: bounce 6.0s infinite ease-in-out;
+}
+@-webkit-keyframes bounce {
+    0%, 100% { -webkit-transform: scale(1.0) }
+    50% {
+        -webkit-transform: translateX(200%);
+    }
+}
+
+.navbar-header-style:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    opacity: 0.7;
+    z-index: -1;
+}
+/*.navbar-header:hover{
+    -webkit-transform: translateX(200%);
+    -webkit-transition: -webkit-transform 2s;
+    -moz-transition: -moz-transform 2s;
+    transition: transform 2s;
+}*/
+.form-item input:hover{
+    -webkit-input-placeholder:color #000;
+}
+
+
+
+.login-register-page__content form {
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 0em;
+    padding: 34px 50px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 9;
+}
+
+.login-register-page__content form:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+.login-register-page__content form .form-item {
+    margin-bottom: 12px;
+}
+.login-register-page__content form .form-item label {
+    display: inline-block;
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #666;
+}
+
+.login-register-page__content form .form-item input {
+    width: 100%;
+    border-color: transparent;
+    height: 40px;
+    border-radius: 5px;
+}
+.login-register-page__content form .terms-conditions,
+.login-register-page__content form .forgot-password {
+    float: left;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #666;
+    text-decoration: none;
+    max-width: 160px;
+}
+.login-register-page__content form .terms-conditions:hover,
+.login-register-page__content form .forgot-password:hover {
+    color: #0091ea;
+}
+.login-register-page__content form .forgot-password::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+.login-register-page__content form .forgot-password::after {
+    margin-left: 10px;
+    content: '！！';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.login-register-page__content form .forgot-password:hover::after,
+.login-register-page__content form .forgot-password:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+.login-register-page__content form .terms-conditions {
+    margin-top: 18px;
+}
+.login-register-page__content form .form-actions {
+    margin-top: 18px;
+    float: right;
+}
+.login-register-page__content form .form-actions button{
+    min-width:70px;
+    min-height: 38px;
+    background-color: #00A8FF;
+    border-color: transparent;
+}
+.login-register-page__content form .form-actions span{
+    font-family: "Adobe 黑体 Std R";
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.login-register-page__content form .form-actions button:hover{
+    opacity: 0.7;
+    text-decoration: none;
+}
+/* Effect 1: Brackets */
+.login-register-page__content form .form-actions span::before,
+.login-register-page__content form .form-actions span::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.login-register-page__content form .form-actions span::before {
+    margin-right: 10px;
+    content: '♥';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.login-register-page__content form .form-actions span::after {
+    margin-left: 10px;
+    content: '♥';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.login-register-page__content form .form-actions span:hover::before,
+.login-register-page__content form .form-actions span:hover::after,
+.login-register-page__content form .form-actions span:focus::before,
+.login-register-page__content form .form-actions span:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+
+
+.login-register-page__content .login-register-link {
+    background-color: #262626;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 20px;
+}
+.login-register-page__content .login-register-link a {
+    color: inherit;
+}
+.login-register-page__content .login-register-link a:hover {
+    color: #0091ea;
+}
+
