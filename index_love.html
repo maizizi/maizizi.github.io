@@ -1,13 +1,27 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1000,user-scalable=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- <meta name="viewport" content="width=1000,user-scalable=no"/>-->
     <title>FM.登陆</title>
-    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <!--<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>-->
+    <!--<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <!--<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>-->
+
+
+
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+    <script src="lib/jquery-2.1.1.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular.js"></script>
+
+
+
+
+
     <link rel="stylesheet" type="text/css" href="CSS/style_login.css">
     <style>
 
@@ -29,11 +43,11 @@
                 if ($scope.user.username=="fengchen"&&$scope.user.password=="20130609") {
                     window.location.href="maizi_login.html";
                 }else {
-                    alert("笨蛋，密码都不记得！跪搓衣板~")
+                    alert("你个大笨蛋，密码都不记得！跪搓衣板~")
                 }
                 }
                 else if($scope.user.username!=""){
-                    alert("你不是陈陈-_-")
+                    alert("你不是陈陈，这里很晒快走开")
                 }
 
             }
@@ -69,11 +83,11 @@
                 </div>
                 <div class="form-item">
                     <label>姓名</label>
-                    <input type="text" placeholder=" fengchen" ng-model="user.username">
+                    <input type="text" placeholder=" name" ng-model="user.username">
                 </div>
                 <div class="form-item">
                     <label>密码</label>
-                    <input type="password" placeholder=" 20130609" ng-model="user.password">
+                    <input type="password" placeholder=" yyyymmdd" ng-model="user.password">
                 </div>
                 <a href="#" class="forgot-password">忘记密码？</a>
                 <div class="form-actions">
