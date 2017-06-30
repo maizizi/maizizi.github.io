@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1000,user-scalable=no"/>
+    <title>FM.登陆</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/style_login.css">
+    <style>
+
+
+    </style>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.user = {
+                username:'',
+                password:''
+            };
+            $scope.login = function () {
+                if ($scope.user.username==""&&$scope.user.password==""){
+                    alert("请输入姓名、密码")
+                }
+                if ($scope.user.username=="fengchen"){
+
+                if ($scope.user.username=="fengchen"&&$scope.user.password=="20130609") {
+                    window.location.href="maizi_login.html";
+                }else {
+                    alert("笨蛋，密码都不记得！跪搓衣板~")
+                }
+                }
+                else if($scope.user.username!=""){
+                    alert("你不是陈陈-_-")
+                }
+
+            }
+        });
+    </script>
+</head>
+<body ng-app="myApp">
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation"
+         style="background-color: inherit;border-color: transparent">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-header-style">
+                <div class="navbar-brand">
+                    <p style="font-size: 30px;font-family: 'Adobe 黑体 Std R';color: #0091ea"><span
+                            style="font-size: 40px;font-style:italic;font-family: cursive;">FM.520</span> ♥ 恩爱频道 ♥</p>
+                </div>
+                <!-- <a class="navbar-brand" href="https://www.baidu.com/" style="background-color: #00A8FF">FM.520恩爱频道</a>
+            -->
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="backSIZE backIMG" >
+    <div class="backOverlay "></div>
+    <div class="container">
+        <div class="login-register-page__content">
+            <form ng-controller="myCtrl" ng-submit="login()">
+                <div style="text-align: center;font-size: 40px;font-style:italic;font-family: cursive;color: #0091ea">
+                    <label>---LOGIN---</label>
+
+                </div>
+                <div class="form-item">
+                    <label>姓名</label>
+                    <input type="text" placeholder=" fengchen" ng-model="user.username">
+                </div>
+                <div class="form-item">
+                    <label>密码</label>
+                    <input type="password" placeholder=" 20130609" ng-model="user.password">
+                </div>
+                <a href="#" class="forgot-password">忘记密码？</a>
+                <div class="form-actions">
+                    <!-- <input type="submit" value="登录">-->
+                   <button class="btn btn-default" type="submit"><span>登录</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+    <div style="padding-top: 20px;padding-bottom: 20px;">
+        <div class="container" style="text-align: center">
+            <p>©2016 陈陈&麦麦 All rights reserved.┊<a href="https://hao.360.cn/?src=lm&ls=n3eb743a591">联系我们</a></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

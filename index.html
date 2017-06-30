@@ -1,107 +1,363 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1000,user-scalable=no"/>
-    <title>FM.登陆</title>
-    <!--<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <!--<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>-->
-    <!--<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-    <!--<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>-->
-
-
-
-    <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
-    <script src="lib/jquery-2.1.1.min.js"></script>
-    <script src="lib/bootstrap.min.js"></script>
-    <script src="lib/angular.js"></script>
-
-
-
-
-
-    <link rel="stylesheet" type="text/css" href="CSS/style_login.css">
-    <style>
-
-
-    </style>
-    <script>
-        var app = angular.module('myApp', []);
-        app.controller('myCtrl', function($scope) {
-            $scope.user = {
-                username:'',
-                password:''
-            };
-            $scope.login = function () {
-                if ($scope.user.username==""&&$scope.user.password==""){
-                    alert("请输入姓名、密码")
-                }
-                if ($scope.user.username=="fengchen"){
-
-                if ($scope.user.username=="fengchen"&&$scope.user.password=="20130609") {
-                    window.location.href="maizi_login.html";
-                }else {
-                    alert("你个大笨蛋，密码都不记得！跪搓衣板~")
-                }
-                }
-                else if($scope.user.username!=""){
-                    alert("你不是陈陈，这里很晒快走开")
-                }
-
-            }
-        });
-    </script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="renderer" content="webkit">
+	<title>Resume-Maizi</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="JS/JS_main.js"></script>
+	<script src="JS/JS_slider.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/style_main.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style_people.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style_slider.css">
+	<!--[if lte IE 8]>
+	<style type="text/css">
+		html,body{width:100%; height:100%; overflow:hidden}
+		.section-btn{display:none;}
+	</style>
+	<![endif]-->
 </head>
-<body ng-app="myApp">
-<header>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation"
-         style="background-color: inherit;border-color: transparent">
-        <div class="container">
-            <div class="navbar-header">
-                <div class="navbar-header-style">
-                <div class="navbar-brand">
-                    <p style="font-size: 30px;font-family: 'Adobe 黑体 Std R';color: #0091ea"><span
-                            style="font-size: 40px;font-style:italic;font-family: cursive;">FM.520</span> ♥ 恩爱频道 ♥</p>
-                </div>
-                <!-- <a class="navbar-brand" href="https://www.baidu.com/" style="background-color: #00A8FF">FM.520恩爱频道</a>
-            -->
-                </div>
-            </div>
-        </div>
-    </nav>
+<body>
+<header id="header">
+	<h3 class="navbar-header">麦子的个人简历</h3>
+	<nav id="nav" class="navbar " role="navigation">
+		<ul  class="section-btn">
+			<li class="on">主页</li>
+			<li>教育背景</li>
+			<li>兴趣爱好</li>
+			<li>项目经历</li>
+			<li>更多相关</li>
+		</ul>
+	</nav>
 </header>
-<section class="backSIZE backIMG" >
-    <div class="backOverlay "></div>
-    <div class="container">
-        <div class="login-register-page__content">
-            <form ng-controller="myCtrl" ng-submit="login()">
-                <div style="text-align: center;font-size: 40px;font-style:italic;font-family: cursive;color: #0091ea">
-                    <label>---LOGIN---</label>
+	<section class="section-wrap">
 
-                </div>
-                <div class="form-item">
-                    <label>姓名</label>
-                    <input type="text" placeholder=" name" ng-model="user.username">
-                </div>
-                <div class="form-item">
-                    <label>密码</label>
-                    <input type="password" placeholder=" yyyymmdd" ng-model="user.password">
-                </div>
-                <a href="#" class="forgot-password">忘记密码？</a>
-                <div class="form-actions">
-                    <!-- <input type="submit" value="登录">-->
-                   <button class="btn btn-default" type="submit"><span>登录</span></button>
-                </div>
-            </form>
-        </div>
-    </div>
+		<div class="section section-1">
+				<section id="banner">
+					<div class="inner">
+						<div class="tran"></div>
+						<!--证件照-->
+						<div class="photo">
+							<div class="wrapper">
+								<div class="background-circle">
+									<div class="triangle-light"></div>
+									<div class="neck"></div>
+									<div class="body"></div>
+									<span class="shirt-text">H</span>
+									<span class="shirt-text">♥</span>
+									<span class="shirt-text">L</span>
+									<span class="shirt-text">L</span>
+									<span class="shirt-text">O</span>
+									<div class="triangle-dark"></div>
+								</div>
+								<div class="head">
+									<div class="hair-main">
+										<div class="hair-top"></div>
+									</div>
+									<div class="face">
+										<div class="hair-bottom"></div>
+										<div class="nose"></div>
+
+										<div class="eye-shadow" id="left">
+											<div class="eyebrow"></div>
+											<div class="eye"></div>
+											<div class="blusher"></div>
+											<div class="eyeglass"></div>
+
+										</div>
+										<div class="eye-shadow" id="right">
+											<div class="eyebrow"></div>
+											<div class="eye"></div>
+											<div class="blusher"></div>
+											<div class="eyeglass"></div>
+
+										</div>
+										<div class="mouth"></div>
+										<div class="shadow-wrapper">
+											<div class="shadow"></div>
+										</div>
+									</div>
+								</div>
+								<span class="music-note" id="one">&#10052;</span>
+								<span class="music-note" id="two">&#10043;</span>
+							</div>
+						</div>
+							<h2>麦紫君</h2>
+						<p>个人简介：一只勤奋好学、热爱生活的女汉纸</p>
+						<p>自我评价：乐观开朗、善于沟通、责任心强、工作踏实</p>
+						<a href="" class="button">联系方式</a>
+					</div>
+				</section>
+		</div>
+		<div class="section section-2">
+					<div class="tran"></div>
+					<header class="title">
+						<h2>教育背景</h2>
+					</header>
+					<div class="container ">
+						<div class="row " >
+							<div class="col-sm-4 col-md-4 col-xs-4 special">
+								<img src="img/logo1.jpg">
+								<h3><strong>学士</strong></h3>
+								<h4><strong>BACHELOR</strong></h4>
+								<h5>2011-2015</h5>
+								<h3 class="styleh3">华中科技大学</h3>
+								<h4>水电与数字化工程学院水利水电工程</h4>
+								<h5>加权成绩：85.54, TOP 10%</h5>
+								<p>主修课程：面向对象程序设计与实践，数据结构，计算机网络与通信，计算机原理与应用，模拟电子技术，数字电子技术，电气工程基础，信号与系统，自动控制理论等</p>
+							</div>
+							<div class="col-sm-4 col-md-4 col-xs-4 special">
+								<img src="img/logo2.jpg">
+								<h3><strong>双学位</strong></h3>
+								<h4><strong>DUAL DEGREE</strong></h4>
+								<h5>2013-2015</h5>
+								<h3 class="styleh3">华中科技大学</h3>
+								<h4>建筑与城市规划学院建筑学</h4>
+								<h5>加权成绩：81.76, TOP 10%</h5>
+								<p>主修课程：建筑设计，CAAD，建筑材料与构造，建筑构造与选型，建筑与城市设计，素描，色彩等</p>
+
+							</div>
+							<div class="col-sm-4 col-md-4 col-xs-4 special">
+								<img src="img/logo3.jpg">
+								<h3><strong>硕士(保研)</strong></h3>
+								<h4><strong>MASTER</strong></h4>
+								<h5>2015-2018</h5>
+								<h3 class="styleh3">华中科技大学</h3>
+								<h4>水电与数字化工程学院水利水电工程</h4>
+								<h5>加权成绩：88.9, TOP 5%</h5>
+								<p>主修课程：人工智能原理及应用，水库群优化调度，动态系统建模与仿真，决策支持系统等</p>
+
+							</div>
+						</div>
+					</div>
+		</div>
+
+		<div class="section section-3 secolor">
+			<div class="tran"></div>
+			<header class="title">
+				<h2>兴趣爱好</h2>
+				<p style="font-size: 20px;margin-top: 15px">——绘画·平面设计·摄影·运动·旅行——</p>
+			</header>
+
+			<div id="center">
+				<div id="slider">
+					<div class="slide">
+						<img class="diapo" src="img/pic5.jpg" alt="">
+						<div class="text">
+							<span class="title">绘画·单车</span>
+							清新的夏日，惬意地哼一曲“他夏了夏天”<a href="http://huaban.com/wyo9xwcr8a/" target="_blank" >(查看详情)</a>
+						</div>
+					</div>
+					<div class="slide">
+						<img class="diapo" src="img/pic11.jpg" alt="">
+						<div class="text">
+							<span class="title">绘画·和风</span>
+							翱翔于色彩与线条的广阔天地，享受一个人的珍贵时光<a href="http://huaban.com/wyo9xwcr8a/" target="_blank" >(查看详情)</a>
+						</div>
+					</div>
+					<div class="slide">
+						<img class="diapo" src="img/pic12.jpg" alt="">
+						<div class="text">
+							<span class="title">绘画·花花世界</span>
+							万千世界，有你相随<a href="http://huaban.com/wyo9xwcr8a/" target="_blank" >(查看详情)</a>
+						</div>
+					</div>
+					<div class="slide">
+						<img class="diapo" src="img/毕业衫.jpg" alt="">
+						<div class="text">
+							<span class="title">平面设计·毕业衫</span>
+							认真地说了再见，我们便定会再见
+						</div>
+					</div>
+					<div class="slide">
+						<img class="diapo" src="img/pic8.JPG" alt="">
+						<div class="text">
+							<span class="title">摄影·宏村</span>
+							仔细刻画生活的点滴<a href="http://blog.163.com/maizijun123@126/album/#m=0&p=1" target="_blank" >(查看详情)</a>
+						</div>
+					</div>
+					<div class="slide">
+						<img class="diapo" src="img/pic6.jpg" alt="">
+						<div class="text">
+							<span class="title">摄影·喻家山</span>
+							可能爱上的是登高望远的广阔视野<a href="http://blog.163.com/maizijun123@126/album/#m=0&p=1" target="_blank" >(查看详情)</a>
+						</div>
+					</div>
+					<div class="slide">
+						<img class="diapo" src="img/pic.jpg" alt="">
+						<div class="text">
+							<span class="title">运动·篮球研赛</span>
+							3v3训练着耐力与爆发力，做球场上的汉纸
+						</div>
+					</div>
+					<div class="slide">
+						<img class="diapo" src="img/pic2.jpg" alt="">
+						<div class="text">
+							<span class="title">旅行·神农架</span>
+							就像对童话故事充满好奇一般，常怀一颗探索未知世界的心<a href="http://blog.163.com/maizijun123@126/album/#m=0&p=1" target="_blank" >(查看详情)</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section-4" id="three">
+			<div class="tran"></div>
+			<header class="title">
+				<h2>项目经历</h2>
+			</header>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-xs-6">
+						<ul>
+							<li>
+								<span>清江梯级经济调度控制研究及高级应用软件开发（清江公司）</span><br>
+								<strong>模块负责人</strong>；梯级发电计划编制与厂内经济运行嵌套模型；面向多级输电断面的机组负荷分配方法；
+								<strong>系统界面负责人</strong>；系统整体界面的设计与开发，对系统中常用图表组件进行二次深度开发，图表库联动及数据交互功能。
+
+							</li>
+							<li>
+								<span>电网水电短期及实时智能调度技术研究（国家电网公司华中分部）</span><br>
+								<strong>模块负责人</strong>；响应负荷趋势的水电站群调峰效益最大模型；基于机组可调区间的求解策略；
+								<strong>系统界面负责人</strong>；功能需求到界面草图设计到自主开发，自主设计包括登录页等多个页面的布局与前后端交互。
+							</li>
+							<li>
+								<span>柬埔寨水文模拟信息系统（长委水文局）</span><br>
+								<strong>系统负责人</strong>；系统整体开发，与业主实时沟通用户需求和修改意见。
+							</li>
+							<li>
+								<span>面向云水资源开发的大气水文学理论研究（自主创新研究基金）</span><br>
+								<strong>模块负责人</strong>；遥相关气候因子对中长期径流预报的影响模型，提出偏互信息遴选因子法；
+								<strong>系统负责人</strong>；系统整体架构建立、数据接口设计，整体开发。拟申请软件著作权一项。
+							</li>
+						</ul>
+					</div>
+					<div class=" col-sm-6 col-md-6 col-xs-6 special1">
+						<img class="image fit" src="img/sy3.png">
+						<img class="image fit" src="img/sy4.png">
+						<img class="image fit" src="img/sy8.png">
+						<img class="image fit" src="img/sy9.png">
+						<img class="image fit" src="img/sy6.png">
+						<img class="image fit" src="img/sy5.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="section section-5 secolor">
+			<div class="tran"></div>
+			<header class="title">
+				<h2>更多相关</h2>
+			</header>
+			<div class="container ">
+				<div class="row">
+					<div class="col-sm-3 col-md-3 col-xs-3 fit">
+						<img src="img/logon8.png" alt="">
+						<h3>专业技能</h3>
+						<ul>
+							<li>熟练掌握Java、J2EE开发技术（Hibernate4+Spring3）</li>
+							<li>熟练操作Oracle 、Mysql等数据库</li>
+							<li>熟练掌握WEB前端开发技术，HTML+CSS+JS、bootstrap、Angularjs等</li>
+							<li>精通Photoshop平面设计，会声会影媒体软件</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-md-3 col-xs-3 fit">
+						<img src="img/logon12.png" alt="">
+						<h3>证书</h3>
+						<ul>
+							<li>全国英语等级CET-4(564分)</li>
+							<li>全国英语等级CET-6(542分)</li>
+							<li>全国计算机等级资格认证二级（C++）</li>
+							<li>全国计算机等级资格认证三级（网络技术）</li>
+							<li>全国计算机等级资格认证四级（网络工程师）</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-md-3 col-xs-3 fit">
+						<img src="img/logon13.png" alt="">
+						<h3>荣誉奖励</h3>
+						<ul>
+							<li>华中科技大学优秀学生干部</li>
+							<li>学习优秀奖学金</li>
+							<li>自强奖学金</li>
+							<li>优秀毕业生</li>
+							<li>三好研究生</li>
+							<li>一等学业奖学金</li>
+							<li>知行优秀一等奖学金</li>
+							<li>三好研究生</li>
+							<li>华科蝴蝶网站衫设计第一名</li>
+							<li>第五届数学中国数学建模国际赛二等奖</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-md-3 col-xs-3">
+						<div  class="fit">
+						<img src="img/logon11.png" alt="">
+						<h3>社会实践</h3>
+						<ul>
+							<li>华中科技大学水电学院宣传部长</li>
+							<li>华中科技大学团委办公室助理</li>
+							<li>葛洲坝电厂、三峡枢纽生产实习</li>
+							<li>“创青春”全国创业大赛志愿者</li>
+							<li>湖北省重点实验室文艺委员</li>
+							<li>校后勤集团办公室网络组监管员</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+
+	<ul class="section-btn">
+
+	  <li class="on"></li>
+
+	  <li></li>
+
+	  <li></li>
+
+	  <li></li>
+
+	  <li></li>
+
+	</ul>
+
+	<div class="arrow">&laquo;</div>
+<!-- Mask -->
+<section class="mask">
+	<div class="card">
+		<img src="img/二维码.jpg">
+		<p>电话号码：13618616679</p>
+		<p>电子邮箱：maizijun123@126.com</p>
+	</div>
 </section>
-<footer>
-    <div style="padding-top: 20px;padding-bottom: 20px;">
-        <div class="container" style="text-align: center">
-            <p>©2016 陈陈&麦麦 All rights reserved.┊<a href="https://hao.360.cn/?src=lm&ls=n3eb743a591">联系我们</a></p>
-        </div>
-    </div>
+<!-- wait -->
+<section class="wait">
+	<h1>Waiting For A Moment...</h1>
+	<div class="loading">
+		<div class="process"></div>
+	</div>
+	<div class="slideUp"></div>
+	<div class="slideDown"></div>
+</section>
+<footer id="footer">
+	<div class="container">
+		<ul class="copyright">
+			<li>&copy; Untitled. All rights reserved 2017.</li>
+			<li><a href="index_love.html" target="_blank">Coder&Designer: 麦紫君</a></li>
+		</ul>
+	</div>
 </footer>
+<script type="text/javascript">
+	/* ==== start script ==== */
+    slider.init();
+</script>
 </body>
+
 </html>
