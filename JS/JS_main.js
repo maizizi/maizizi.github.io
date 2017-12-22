@@ -183,6 +183,11 @@ $(document).ready(function () {
         $(".mask").addClass('active');
         return false;
     });
+    $(".button1").click(function (event) {
+        /* Act on the event */
+        $(".mask").addClass('active');
+        return false;
+    });
     //蒙版消失
     $(".mask").click(function (event) {
         /* Act on the event */

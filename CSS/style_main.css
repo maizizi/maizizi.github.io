@@ -101,45 +101,29 @@ html, body {
 }
 
 @keyframes arrow {
-
-%
-0
-,
-%
-100
+0%,
+100%
 {
-    bottom: 15px
-;
-    opacity: 1
-;
+    bottom: 15px;
+    opacity: 1;
 }
-50
-%
+50%
 {
-    bottom: 30px
-;
+    bottom: 30px;
     opacity: .5
 }
 }
 @-webkit-keyframes arrow {
-
-%
-0
-,
-%
-100
+0%,
+100%
 {
-    bottom: 15px
-;
-    opacity: 1
-;
+    bottom: 15px;
+    opacity: 1;
 }
-50
-%
+50%
 {
-    bottom: 30px
-;
-    opacity: .5
+    bottom: 30px;
+    opacity: .5;
 }
 }
 
@@ -210,7 +194,7 @@ html, body {
 #header nav > ul > li {
     padding-left: 1em;
     padding-right: 1em;
-    border-top: 2px solid;
+    border-right: 2px solid;
     border-color: white;
     border-radius: 10px;
 }
@@ -272,6 +256,9 @@ html, body {
 #banner .button {
     min-width: 12em;
     color: rgba(255, 255, 255, 0.65);
+}
+#banner .button1{
+    cursor:pointer;
 }
 
 #banner h2 {
@@ -536,7 +523,7 @@ header.titleadd {
 
 .mask .card h2 {
     font-size: 10px;
-    margin 0;
+    margin:0;
     margin-bottom: 10px;
 }
 
